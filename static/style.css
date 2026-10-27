@@ -1,0 +1,46 @@
+body{
+    background:#111827;
+    color:white;
+    font-family: Calibri;
+    text-align: center;
+    padding-top: 50px;
+}
+
+h1{
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+
+p{
+    font-size: 25px;
+}
+
+.card{
+    width:60%;
+    margin: auto;
+    margin-bottom: 25px;
+    padding: 20px;
+    background: #1f2937;
+    border-radius: 15px;
+}
+.controls{
+    margin-top: 40px;
+
+}
+button{
+    width: 240px;
+    height: 70px;
+    font-size: 22px;
+    border-radius: 15px;
+    margin: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    border: none; 
+    font-family: Calibri; 
+}
+
+button:hover{
+    transform: scale(1.2 );
+    background: #3b82f6;
+    color: white;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Keyboard Activity Dashboard</title>
+        <meta http-equiv="refresh" content="2">   
+        <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+    </head>
+    <body>
+        <h1>Keyboard Activity Dashboard</h1>
+        <div class="card">
+            <h2>Status</h2>
+            <p>{{stats.status}}</p>
+        </div>
+        <div class="card">
+            <h2>Current Key</h2>    
+            <p>{{stats.current}}</p>
+        </div>
+        <div class="card">
+            <h2> Session Duration</h2>
+            <p>{{stats.duration}}</p>
+        </div>
+        <div class="card">
+            <h2>Total Keys</h2>
+            <p>{{stats.total}}</p>
+            </div>
+        <div class="card">
+            <h2>Top Keys</h2>
+            <ul>
+                {% for key in stats.top %}
+                <li>{{key}}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="controls">
+            <a href="/start"> <button>Start Counter</button> </a>
+            <a href="/stop"><button>Stop Counter</button></a>
+            <a href="/reset"><button>Reset</button></a>
+        </div>
+    </body>
+</html>
